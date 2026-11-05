@@ -25,7 +25,6 @@ pkg.generate(libclient_api,
         version: meson.project_version(),
         libraries: [libclient_api],
         filebase: pkg_config_name,
-        install_dir: '/usr/lib/pkgconfig',
         description: 'Use regolith config manager')
 
 run_target('uninstall-lib', command : ['scripts/uninstall.sh'])
